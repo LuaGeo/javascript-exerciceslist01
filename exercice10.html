@@ -1,0 +1,25 @@
+<!-- 10. Converter um inteiro informado menor que 32 para sua representação em binário -->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Exercício</title>
+    <script>
+      const decimalNumber = prompt("Informe um numero inteiro menor que 32: ")
+      
+      const binaryNumber = parseInt(decimalNumber, 10).toString(2) 
+
+// O parseInt precisa indicar o radix (base matematica de sistemas numéricos (de 2 a 32)), que nesse caso seria 10??
+// Se nao indicar nada ele ja assume talvez automaticamente o valor decimal (10), pois deu certo tb. 
+
+      alert(`O numero decimal ${decimalNumber} equivale ao numero binario ${binaryNumber}`)
+    </script>
+</head>
+<body>
+    <h1>Exercício 10 - JavaScript</h1>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!-- 7. Solicitar a idade de uma pessoa em dias e informar na tela a idade em anos, meses e dias. -->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Exercício</title>
+    <script>
+      const number01 = prompt("Informe a sua idade em dias: ")
+      
+      const years = Math.floor (number01 / 365) 
+      const months = Math.floor ((number01 % 365) / 30)
+      const days = Math.floor (((number01 % 365) % 30) + (months/2))
+      
+      alert(`A sua idade é de ${years} anos, ${months} meses e ${days} dias`)
+    </script>
+</head>
+<body>
+    <h1>Exercício 07 - JavaScript</h1>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!-- 13. Um circuito elétrico é composto de duas resistências R1 e R2 em paralelo, e ambas em
+sequência de uma resistência R3. Faça um algoritmo para calcular a resistência
+equivalente desse circuito. -->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Exercício</title>
+    <script>
+
+      const R1 = prompt("Informe o valor da resistência 1, em Ohms: ")
+      const R2 = prompt("Informe o valor da resistência 2, em Ohms: ")
+      const R3 = prompt("Informe o valor da resistência 3, em Ohms: ")
+      
+      const equivalentResistance = 1/((1 / R1) + (1 / R2)) + parseInt(R3) //pq nao precisou botar o parseInt na soma entre parenteses?
+
+      alert(`A resistência equivalente é de: ${equivalentResistance} Ohms`)
+    </script>
+</head>
+<body>
+    <h1>Exercício 13 - JavaScript</h1>
+</body>
+</html>

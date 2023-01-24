@@ -1,0 +1,45 @@
+<!-- 14. Em uma cidade se deseja sincronizar os semáforos. Com isto, quando um semáforo abre
+(fica verde), os veículos que nele estavam parados tendem a encontrar os próximos
+semáforos também abertos. Para que isto seja feito, os próximos semáforos precisam
+abrir um pouco depois, dependendo da velocidade permitida na via e da distância entre
+eles. Assim, ao abrir o semáforo, um veículo começa a acelerar até atingir a velocidade
+permitida, que mantém até chegar ao próximo semáforo, levando um certo tempo para
+percorrer essa distância. Para que encontre o próximo semáforo aberto, este deve abrir
+um pouco antes da chegada do veículo (por ex: 3 segundos antes). Faça assim um
+algoritmo que informe quanto tempo depois um semáforo deve abrir, dada as seguintes
+informações:
+a. a distância desde o semáforo anterior
+b. a velocidade permitida da via
+c. a aceleração típica dos carros -->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Exercício</title>
+    <script>
+      const distance = prompt("Informe a distancia entre os dois semaforos em metros: ")
+      const allowedSpeed = prompt("Informe a velocidade permitida em km/h: ")
+      const acceleration = prompt("Informe a aceleração tipica dos carros em m/s²: ")
+      
+      const speedMeterPerSecond = allowedSpeed / 3.6
+        
+      const timeToReachAllowedSpeed = speedMeterPerSecond / acceleration
+      const distanceTraveledToReachAllowedSpeed = speedMeterPerSecond * timeToReachAllowedSpeed
+      const remainingDistance = distance - distanceTraveledToReachAllowedSpeed
+      const remainingTime = remainingDistance / speedMeterPerSecond
+      const totalTime = parseInt(timeToReachAllowedSpeed + remainingTime)
+
+      const timeToOpenNextSemaphore = totalTime - 3
+      
+      alert(`O semaforo seguinte deve ser aberto em: ${timeToOpenNextSemaphore} segundos`)
+      
+    </script>
+</head>
+<body>
+    <h1>Exercício 14 - JavaScript</h1>
+</body>
+</html>

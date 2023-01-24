@@ -1,0 +1,32 @@
+<!-- 11. Faça um algoritmo para calcular a nota semestral de um aluno. A nota semestral é obtida
+pela média aritmética entre a nota de 2 bimestres. Cada nota de bimestre é composta por
+2 notas de provas. -->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Exercício</title>
+    <script>
+      const grade1Bimester1 = prompt("Informe a nota da primeira prova do primeiro bimestre: ")
+      const grade2Bimester1 = prompt("Informe a nota da segunda prova do primeiro bimestre: ")
+      
+      const mediaBimester1 = parseInt(grade1Bimester1) + parseInt(grade2Bimester1)
+      
+      const grade1Bimester2 = prompt("Informe a nota da primeira prova do segundo bimestre: ")
+      const grade2Bimester2 = prompt("Informe a nota da segunda prova do segundo bimestre: ")
+
+      const mediaBimester2 = parseInt(grade1Bimester2) + parseInt(grade2Bimester2)
+
+      const mediaSemester = (mediaBimester1 + mediaBimester2) / 2
+
+      alert(`A sua nota semestral é: ${mediaSemester}`)
+    </script>
+</head>
+<body>
+    <h1>Exercício 11 - JavaScript</h1>
+</body>
+</html>
